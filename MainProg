@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include "listObj.h"
+using namespace std;
+
+int main(){
+	listObj myList;
+	listObj myOtherList("Jimmy");
+
+	myList.clear();
+	myList.add("Bobby",33);
+	myList.add("Billy",22);
+	myList.display();
+	cout << "Now adding 1 element...";
+	myList.add("Sue",44);
+	myList.display();
+
+	//working on List 2
+	cout << "\n-----------------------List 2-----------------\n";
+	myOtherList.add("Ronald",11);
+	myOtherList.add("Bill",12);
+	myOtherList.display();
+
+	system("pause");
+	return 0;
+}
